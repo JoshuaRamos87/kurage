@@ -1,0 +1,7 @@
+{
+  "name": "kurage",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
