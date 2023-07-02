@@ -11,10 +11,18 @@ import { ExploreContainerComponent } from '../explore-container/explore-containe
   standalone: true,
   imports: [IonicModule, ExploreContainerComponent, HttpClientModule], 
 })
+
 export class Tab1Page {
-  constructor(private http: HttpClient) {}
+
+  backendVariable: string;
+
+  constructor(private http: HttpClient) {
+    this.backendVariable = 'k';
+
+  }
 
   ngOnInit() {
+    
     try {
       const url = '/api/po/catalog.json';
       this.http.get(url).subscribe((data) => {
