@@ -16,7 +16,7 @@ export class Tab1Page {
 
   ngOnInit() {
     try {
-      const url = 'https://a.4cdn.org/po/catalog.json';
+      const url = '/api/po/catalog.json';
       this.http.get(url).subscribe((data) => {
         console.log(data); // Handle the retrieved JSON data here
       });
